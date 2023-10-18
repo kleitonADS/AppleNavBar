@@ -1,17 +1,17 @@
-// const itensMenu = document.querySelector(".itens-menu");
+imgApple = document.querySelector(".logo img")
 
-// itensMenu.addEventListener("mouseover", (event) => {
+function switchbutton() {
+  html = document.documentElement;
+  html.classList.toggle("dark");
 
-//    let submenu = document.querySelector(".nav-list-dropdown")
-// if(submenu.contains("dropdown")){
-//   console.log("hummm")
-// }
-  
-//   console.log()
+     if (html.classList.contains("dark")) {
+        imgApple.setAttribute("src", "./assets/images/apple-fill17px-black.svg")
 
-//   console.log("aqui")
-// });
+        // imgButtonNotes.setAttribute("src", "./assets/img/edit-line-w.svg")
+    } else {
+        imgApple.setAttribute("src", "./assets/images/apple-fill17px.svg")
 
-// itensMenu.onmouseover = (event) => {
-//   console.log("ali")
-// };
+        // imgButtonNotes.setAttribute("src", "./assets/img/edit-line.svg")
+    }
+}
+

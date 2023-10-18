@@ -48,6 +48,7 @@ z-index: 99999;
   max-width: 1024px;
     margin: 0 -8px;
     height: 44px;
+    padding-left: 8px;
  }
 
  nav .itens-menu a {
@@ -78,6 +79,14 @@ z-index: 99999;
        padding: 0 8px;
   }
 
+ .logo img:hover{
+    content: url(/assets/images/apple-fill17px-white.svg);
+  }
+
+  .nav-list {
+    display: none;
+  }
+
   .dropdow {
     position: absolute;
     top:-20px;
@@ -91,6 +100,19 @@ z-index: 99999;
     visibility: hidden;
     z-index: -1;
     /* transform: translateY(-20px); */
+  }
+
+  .logo-search-bag {
+    display: flex;
+    padding-right: 20px;
+  }
+
+  .search:hover {
+    content: url(/assets/images/search-line-white.svg);
+  }
+
+  .bag:hover {
+    content: url(/assets/images/shopping-bag-line-white.svg);
   }
 
   .nav-dropdown{
@@ -159,5 +181,8 @@ z-index: 99999;
   list-style: none;
   padding-bottom: 5px;
 }
+
+
+
 
 
