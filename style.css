@@ -37,6 +37,7 @@ z-index: 99999;
  
  
   background-color: rgba(22, 22, 23, .8) ;
+  /* backdrop-filter: saturate(180%) blur(20px); */
  }
 
  nav .itens-menu{
@@ -69,6 +70,8 @@ z-index: 99999;
    nav .itens-menu a:hover .dropdow {
     opacity: 1;
     visibility: visible;
+    transform: translateY(20px);
+    
   }
 
   nav .itens-menu img{
@@ -77,15 +80,17 @@ z-index: 99999;
 
   .dropdow {
     position: absolute;
-    top:0;
+    top:-20px;
     left: 0;
     width: 100%;
     background-color: black;
-    transition: all .5s ease-in-out;
-    padding-top: 40px;
+    /* backdrop-filter: saturate(180%) blur(20px);  */
+    transition: all .4s ease-in;
+    padding-top: 20px;
     opacity: 0;
     visibility: hidden;
     z-index: -1;
+    /* transform: translateY(-20px); */
   }
 
   .nav-dropdown{
@@ -127,6 +132,7 @@ z-index: 99999;
     font-weight: 600;
     letter-spacing: .009em;
     font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    
   }
 .item-list {
   font-size: 12px;
@@ -140,8 +146,18 @@ z-index: 99999;
   list-style: none;
 }
 
+.item-list ul li{
+  list-style: none;
+  padding-bottom: 5px;
+}
+
 .item-list-main ul{
   list-style: none;
+}
+
+.item-list-main ul li{
+  list-style: none;
+  padding-bottom: 5px;
 }
 
 
