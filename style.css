@@ -1,10 +1,9 @@
 
- 
  *{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-  } 
+ } 
 
  html, body {
   height: 800px;
@@ -26,16 +25,13 @@
   height: 44px;
   padding: 0 5px;
   margin: 0 auto;
-    cursor: default;
-    width: 100%;
-    /* -webkit-user-select: none;
-    user-select: none;
-    list-style: none; */
-    position: fixed;
-z-index: 99999;
- 
- 
- 
+  cursor: default;
+  width: 100%;
+  /* -webkit-user-select: none;
+  user-select: none;
+  list-style: none; */
+  position: fixed;
+  z-index: 99999;
   background-color: rgba(22, 22, 23, .8) ;
   /* backdrop-filter: saturate(180%) blur(20px); */
  }
@@ -46,9 +42,9 @@ z-index: 99999;
   justify-content: space-between;
   width: 100%;
   max-width: 1024px;
-    margin: 0 -8px;
-    height: 44px;
-    padding-left: 8px;
+  margin: 0 -8px;
+  height: 44px;
+  padding-left: 8px;
  }
 
  nav .itens-menu a {
@@ -68,7 +64,7 @@ z-index: 99999;
   }
 
 
-   nav .itens-menu a:hover .dropdow {
+   nav .itens-menu a:hover .dropdown {
     opacity: 1;
     visibility: visible;
     transform: translateY(20px);
@@ -82,12 +78,43 @@ z-index: 99999;
  .logo img:hover{
     content: url(/assets/images/apple-fill17px-white.svg);
   }
-
-  .nav-list {
-    display: none;
+  
+  .input-search{
+    display: flex;
+    width: 100%;
+    margin-bottom: 25px;
   }
 
-  .dropdow {
+  .input-area {
+    font-size: 24px;
+    line-height: 1.1666666667;
+    font-weight: 600;
+    letter-spacing: .009em;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    position: relative;
+    z-index: 1;
+    margin-inline-start: -30px;
+    margin-inline-end: -31px;
+    padding-inline-start: 34px;
+    padding-inline-end: 34px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: #E8E8ED;
+    line-height: 1;
+  }
+
+  .input-area:focus {
+    outline: 0;
+  }
+  .nav-list {
+    /* display: none; */
+  }
+
+  .dropdown {
     position: absolute;
     top:-20px;
     left: 0;
@@ -105,6 +132,11 @@ z-index: 99999;
   .logo-search-bag {
     display: flex;
     padding-right: 20px;
+  }
+
+  .bag-subtitle{
+    padding-top: 20px;
+    padding-left: 5px;
   }
 
   .search:hover {
@@ -125,17 +157,21 @@ z-index: 99999;
 
   .dropdow-inner {
     display: flex;
-
     padding: 50px;
     padding-left: 25px;
     width: 100%;
-    /* max-width: 50%; */
+  }
+
+  .dropdow-inner-search {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    padding-left: 25px;
+    width: 100%;
   }
 
   .dropdown-item{
-    padding-left: 10%
-
-
+    padding-left: 10%;
   }
 
   .item-heading{
@@ -147,6 +183,10 @@ z-index: 99999;
     color: rgb(134, 134, 139);
     padding-bottom: 10px;
   }
+  .item-heading-small {
+    padding-left: 15px ;
+  }
+
 
   .item-list-main{
     font-size: 24px;
@@ -154,33 +194,50 @@ z-index: 99999;
     font-weight: 600;
     letter-spacing: .009em;
     font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-    
   }
-.item-list {
-  font-size: 12px;
+  
+  .item-list {
+    font-size: 12px;
     line-height: 1.3333733333;
     font-weight: 600;
     letter-spacing: -.01em;
-    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-}
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif; 
+  }
 
-.item-list ul{
-  list-style: none;
-}
+  .searchlist {
+    padding-left: 5px; 
+  }
 
-.item-list ul li{
-  list-style: none;
-  padding-bottom: 5px;
-}
+  .item-list ul{
+    list-style: none;
+  }
 
-.item-list-main ul{
-  list-style: none;
-}
+  .item-list ul li{
+    list-style: none;
+    padding-bottom: 5px;
+  }
 
-.item-list-main ul li{
-  list-style: none;
-  padding-bottom: 5px;
-}
+  .item-list-main ul{
+    list-style: none;
+  }
+
+  .item-list-main ul li{
+    list-style: none;
+    padding-bottom: 5px;
+  }
+
+  
+
+  footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+
+  footer a {
+    color: black;
+  }
+
 
 
 
