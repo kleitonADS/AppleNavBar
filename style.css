@@ -1,15 +1,13 @@
 
  *{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
  } 
 
  html, body {
   height: 800px;
   width: 100%;
-
-
  }
 
  #main{
@@ -27,13 +25,10 @@
   margin: 0 auto;
   cursor: default;
   width: 100%;
-  /* -webkit-user-select: none;
-  user-select: none;
-  list-style: none; */
   position: fixed;
   z-index: 99999;
   background-color: rgba(22, 22, 23, .8) ;
-  /* backdrop-filter: saturate(180%) blur(20px); */
+  backdrop-filter: saturate(180%) blur(20px);
  }
 
  nav .itens-menu{
@@ -49,14 +44,13 @@
 
  nav .itens-menu a {
   text-decoration: none;
-    color: rgba(255, 255, 255, .8);
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: -.01em;
-    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-    line-height: 1;
-    padding: 0 8px;
-   
+  color: rgba(255, 255, 255, .8);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  line-height: 1;
+  padding: 0 8px;
   }
 
   nav .itens-menu a:hover{
@@ -68,11 +62,10 @@
     opacity: 1;
     visibility: visible;
     transform: translateY(20px);
-    
   }
 
   nav .itens-menu img{
-       padding: 0 8px;
+    padding: 0 8px;
   }
 
  .logo img:hover{
@@ -111,7 +104,7 @@
     outline: 0;
   }
   .nav-list {
-    /* display: none; */
+    display: flex;
   }
 
   .dropdown {
@@ -170,11 +163,11 @@
     width: 100%;
   }
 
-  .dropdown-item{
+  .dropdown-item {
     padding-left: 10%;
   }
 
-  .item-heading{
+  .item-heading {
     font-size: 12px;
     line-height: 1.3333733333;
     font-weight: 400;
@@ -186,7 +179,6 @@
   .item-heading-small {
     padding-left: 15px ;
   }
-
 
   .item-list-main{
     font-size: 24px;
@@ -226,7 +218,48 @@
     padding-bottom: 5px;
   }
 
+  /* Dark Theme Mode */
+  .dark nav {
+    background-color: #fff;
+  }
+
   
+
+  .dark .nav-list{
+    color: #000;
+  }
+  
+  .dark .dropdown {
+    background-color: #fff;
+  }
+
+  .dark .item-list-main {
+    color: #000;
+  }
+  .dark .item-list {
+    color: #000;
+  }
+ 
+  .dark nav .itens-menu a:hover {
+    color: rgb(134, 134, 139);
+  }
+
+  .dark .logo img:hover{
+    content: url(/assets/images/apple-fill17px-hover.svg);
+  }
+
+  .dark .link-search img:hover{
+    content: url(/assets/images/search-line-hover.svg
+    )
+  }
+
+  .dark .link-bag img:hover{
+    content: url(/assets/images/shopping-bag-line-hover.svg);
+  }
+
+ 
+
+ 
 
   footer {
     display: flex;
@@ -236,6 +269,12 @@
 
   footer a {
     color: black;
+  }
+
+  @media(max-width: 768px){
+    .nav-list {
+    display: none;
+  }
   }
 
 
